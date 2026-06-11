@@ -13,92 +13,24 @@
     <div class="nav__inner">
       <a href="/" class="nav__logo">Wilson<span>Robles</span></a>
       <nav class="nav__links" aria-label="Main navigation">
-        <a data-section="hero">Features</a>
-        <a data-section="about">About</a>
-        <a data-section="contact">Contact</a>
+        <a data-section="1.Bio"data-i18n="nav.bio">Bio</a>
+        <a data-section="2.Timeline" data-i18n="nav.timeline">Timeline</a>
+        <a data-section="3.Projects" data-i18n="nav.projects">Projects</a>
+        <a data-section="4.Experience" data-i18n="nav.experience">Experience</a>
+        <a data-section="5.Essay" data-i18n="nav.essay">A few words...</a>
+        <a data-section="6.Socials" data-i18n="nav.socials">Socials</a>
       </nav>
     </div>
+    <button id="lang-toggle" data-i18n="nav.lang">ES</button>
   </header>
 
   <main>
 
-    <!-- ── Hero ── -->
-    <section class="hero section container" aria-labelledby="hero-title">
-      <div class="hero__content">
-        <div class="hero__label">
-          <span>✦</span> Version 1.0 is live
-        </div>
-        <h1 class="hero__title" id="hero-title">
-          Build things that<br><em>actually matter</em>
-        </h1>
-        <p class="hero__desc">
-          A clean starting point. No frameworks, no drama — just HTML, CSS, and JS.
-          Replace this with whatever you're building.
-        </p>
-        <div class="hero__actions">
-          <a href="#features" class="btn btn--primary">Explore features</a>
-          <a href="#" class="btn btn--ghost">View source</a>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- ── Features ── -->
-    <section class="section container" id="features" aria-labelledby="features-title">
-      <div class="section-header">
-        <p class="eyebrow">Features</p>
-        <h2 id="features-title">Everything you need,<br>nothing you don't</h2>
-      </div>
-
-      <div class="features__grid">
-        <div class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">⚡</div>
-          <h3>Fast by default</h3>
-          <p>Zero runtime overhead. The browser gets exactly what it needs and nothing more.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">🎨</div>
-          <h3>Design tokens</h3>
-          <p>CSS custom properties make it trivial to theme and adapt every visual detail.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">📐</div>
-          <h3>Responsive layout</h3>
-          <p>Fluid grids and <code>clamp()</code> typography that scale without media-query soup.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-card__icon" aria-hidden="true">🛠</div>
-          <h3>Ready to extend</h3>
-          <p>Clean section structure. Add JS modules, a bundler, or a backend whenever you're ready.</p>
-        </div>
-      </div>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- ── About (placeholder section) ── -->
-    <section class="section container" id="about" aria-labelledby="about-title">
-      <div class="section-header">
-        <p class="eyebrow">About</p>
-        <h2 id="about-title">Your story goes here</h2>
-        <p>Drop in your content, swap the palette in <code>:root</code>, and you're off. The structure stays out of your way.</p>
-      </div>
-    </section>
+    <div id="ComponentRenderer">
+      
+    </div>
 
   </main>
-
-  <!-- ── Footer ── -->
-  <footer class="footer" role="contentinfo">
-    <div class="container footer__inner">
-      <p class="footer__copy">© <span id="year"></span> mysite. All rights reserved.</p>
-      <nav class="footer__links" aria-label="Footer navigation">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Contact</a>
-      </nav>
-    </div>
-  </footer>
 
   <script src="js/main.js"></script>
 

@@ -1,35 +1,44 @@
-// Auto-update copyright year
-document.getElementById('year').textContent = new Date().getFullYear();
-
-// Smooth active-link highlight on scroll
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav__links a[href^="#"]');
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-    if (entry.isIntersecting) {
-        navLinks.forEach(link => {
-        link.style.color = link.getAttribute('href') === `#${entry.target.id}`
-            ? 'var(--clr-text)'
-            : '';
-        });
-    }
+// Load saved language or default to EN
+let translations = {};
+async function loadLanguage(lang) {
+    const res = await fetch(`js/i18n/${lang}.json`);
+    translations = await res.json();
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (translations[key]) el.textContent = translations[key];
     });
-}, { rootMargin: '-40% 0px -55% 0px' });
+    localStorage.setItem('lang', lang);
+}
+loadLanguage(localStorage.getItem('lang') || 'en');
 
-sections.forEach(s => observer.observe(s));
+// Lang toggle function
+document.getElementById('lang-toggle').addEventListener('click', () => {
+    const current = localStorage.getItem('lang') || 'en';
+    loadLanguage(current === 'en' ? 'es' : 'en');
+});
 
-
-async function loadComponent(id, file) {
-  const el = document.getElementById(id);
-  const res = await fetch(file);
-  el.innerHTML = await res.text();
+// Space for subcomponent rendering
+const content = document.getElementById('ComponentRenderer');
+async function loadComponent(section) {
+    const res = await fetch(`html/${section}.html`);
+    content.innerHTML = await res.text();
 }
 
-document.addEventListener('click', (e) => {
-  const link = e.target.closest('[data-section]');
-  if (!link) return;
+// Function to load subcompoennts
+const links = document.querySelectorAll('.nav__links a');
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+        links.forEach(l => {
+            l.classList.remove('active');
+            l.removeAttribute('aria-current');
+        });
 
-  const section = link.dataset.section;
-  loadComponent(section, `../html/${section}.html`);
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+
+        loadComponent(link.dataset.section);
+    });
 });
+
+// Load default view
+loadComponent('1.Bio');

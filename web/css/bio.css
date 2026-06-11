@@ -1,0 +1,7 @@
+.bio {
+    padding: 3rem min(6rem, 8vw);
+}
+
+.bio h3 {
+    color: chartreuse;
+}
