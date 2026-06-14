@@ -5,3 +5,15 @@
 .bio h3 {
     color: chartreuse;
 }
+
+.bio div.Horizontal{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.bio div.Vertical {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

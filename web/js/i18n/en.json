@@ -6,5 +6,17 @@
     "nav.experience": "Experience",
     "nav.essay": "Essay",
     "nav.socials": "Socials",
-    "footer.copy": "All rights reserved."
+    "footer.copy": "All rights reserved.",
+
+    
+    "bio.salute" : "Hola, soy Wilson",
+    "bio.header1" : "¿Quién soy?",
+    "bio.description1" : "Soy ingeniero de LLMs con conocimiento en diversas librerías de despliegue y entrenamiento de agentes de IA. Graduado en el máster en Ingeniería de Telecomunicaciones por la UPNA en 2025, dada mi experiencia en el despliegue de modelos de IA y el conocimiento adquirido en la unviersidad sobre gestión de redes, soy conocedor del funcionamiento de despliegues de servicios IT especialmente en el ámbito de los grandes modelos de lenguaje (LLMs).",
+    "bio.header2" : "¿Cómo soy?",
+    "bio.description2" : "Analítico, sincero y autocrítico. Siempre busco tener un locus de control interno y enfrentar los desafíos de la vida buscando cambiar aquellas partes que puedo cambiar y aceptando aquellas que no.",
+    "bio.header3" : "¿A dónde voy?",
+    "bio.description3" : "Quiero utilizar todas estas habilidades que he adquirido, y me han sido concedidas por muchas otras personas que impactaron sobre mi forma de ver la vida sean utilizadas, para ayudar a otras personas. Asimismo, quiero seguir desarrollando estos talentos y este potencial hasta donde el tiempo me lo permita.",
+
+    
+    "essay.motto" : "Uno de mis lemas importantes al respecto: Si el problema no precisa de IA, no la uses."
 }

@@ -9,7 +9,6 @@ async function loadLanguage(lang) {
     });
     localStorage.setItem('lang', lang);
 }
-loadLanguage(localStorage.getItem('lang') || 'en');
 
 // Lang toggle function
 document.getElementById('lang-toggle').addEventListener('click', () => {
@@ -37,8 +36,12 @@ links.forEach(link => {
         link.setAttribute('aria-current', 'page');
 
         loadComponent(link.dataset.section);
+        loadLanguage(localStorage.getItem('lang') || 'es');
     });
 });
 
 // Load default view
-loadComponent('1.Bio');
+loadComponent('1.Bio').then(
+    // Load stored language
+    loadLanguage(localStorage.getItem('lang') || 'es')
+);

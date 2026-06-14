@@ -1,0 +1,117 @@
+/* css/timeline.css */
+
+.timeline {
+    padding: 3rem min(6rem, 8vw);
+}
+
+.timeline__track {
+    position: relative;
+    margin-top: 2.5rem;
+    padding-block: 1rem;
+}
+
+/* Central vertical line */
+.timeline__track::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: var(--clr-border);
+    transform: translateX(-50%);
+}
+
+.timeline__item {
+    position: relative;
+    width: 50%;
+    padding: 1.25rem 2.5rem;
+    box-sizing: border-box;
+}
+
+.timeline__item--left {
+    left: 0;
+    text-align: right;
+}
+
+.timeline__item--right {
+    left: 50%;
+    text-align: left;
+}
+
+/* Dot on the central line */
+.timeline__item::after {
+    content: '';
+    position: absolute;
+    top: 1.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--clr-accent);
+    border: 2px solid var(--clr-bg);
+}
+
+.timeline__item--left::after {
+    right: -6px;
+}
+
+.timeline__item--right::after {
+    left: -6px;
+}
+
+.timeline__content {
+    display: inline-block;
+    max-width: 360px;
+}
+
+.timeline__date {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--clr-accent);
+    margin-bottom: 0.25rem;
+}
+
+.timeline__content h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+.timeline__content p {
+    font-size: 0.9rem;
+    color: var(--clr-muted);
+}
+
+.timeline__item--left .timeline__content p,
+.timeline__item--right .timeline__content p {
+    margin-inline: 0;
+}
+
+/* ── Mobile: collapse to single column ── */
+@media (max-width: 640px) {
+    .timeline__track::before {
+        left: 12px;
+    }
+
+    .timeline__item,
+    .timeline__item--left,
+    .timeline__item--right {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding: 1.25rem 0 1.25rem 2.5rem;
+    }
+
+    .timeline__item--left::after,
+    .timeline__item--right::after {
+        left: 6px;
+        right: auto;
+    }
+
+    .timeline__content {
+        max-width: 100%;
+    }
+}

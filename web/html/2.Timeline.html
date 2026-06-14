@@ -1,29 +1,41 @@
-<section class="section container" id="features" aria-labelledby="features-title">
-    <div class="section-header">
-        <p class="eyebrow">Features</p>
-        <h2 id="features-title">Everything you need,<br>nothing you don't</h2>
+<link rel="stylesheet" href="css/timeline.css" />
+
+<section class="timeline">
+  <h3 data-i18n="timeline.title">Timeline</h3>
+
+  <div class="timeline__track">
+
+    <div class="timeline__item timeline__item--left">
+      <div class="timeline__content">
+        <span class="timeline__date">2019</span>
+        <h4 data-i18n="timeline.item1.title">University begins</h4>
+        <p data-i18n="timeline.item1.desc">Started my degree, first contact with programming and the projects that came with it.</p>
+      </div>
     </div>
 
-    <div class="features__grid">
-        <div class="feature-card">
-        <div class="feature-card__icon" aria-hidden="true">⚡</div>
-        <h3>Fast by default</h3>
-        <p>Zero runtime overhead. The browser gets exactly what it needs and nothing more.</p>
-        </div>
-        <div class="feature-card">
-        <div class="feature-card__icon" aria-hidden="true">🎨</div>
-        <h3>Design tokens</h3>
-        <p>CSS custom properties make it trivial to theme and adapt every visual detail.</p>
-        </div>
-        <div class="feature-card">
-        <div class="feature-card__icon" aria-hidden="true">📐</div>
-        <h3>Responsive layout</h3>
-        <p>Fluid grids and <code>clamp()</code> typography that scale without media-query soup.</p>
-        </div>
-        <div class="feature-card">
-        <div class="feature-card__icon" aria-hidden="true">🛠</div>
-        <h3>Ready to extend</h3>
-        <p>Clean section structure. Add JS modules, a bundler, or a backend whenever you're ready.</p>
-        </div>
+    <div class="timeline__item timeline__item--right">
+      <div class="timeline__content">
+        <span class="timeline__date">2021</span>
+        <h4 data-i18n="timeline.item2.title">University project</h4>
+        <p data-i18n="timeline.item2.desc">Worked on a project that shaped how I approach problems.</p>
+      </div>
     </div>
-    </section>
+
+    <div class="timeline__item timeline__item--left">
+      <div class="timeline__content">
+        <span class="timeline__date">2023</span>
+        <h4 data-i18n="timeline.item3.title">Master's thesis</h4>
+        <p data-i18n="timeline.item3.desc">Final project for my master's degree, focused on...</p>
+      </div>
+    </div>
+
+    <div class="timeline__item timeline__item--right">
+      <div class="timeline__content">
+        <span class="timeline__date">2024 — Present</span>
+        <h4 data-i18n="timeline.item4.title">Current work</h4>
+        <p data-i18n="timeline.item4.desc">Currently working as...</p>
+      </div>
+    </div>
+
+  </div>
+</section>
