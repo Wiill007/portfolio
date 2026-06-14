@@ -23,7 +23,7 @@ async function loadComponent(section) {
     content.innerHTML = await res.text();
 }
 
-// Function to load subcompoennts
+// Function to load subcomponents
 const links = document.querySelectorAll('.nav__links a');
 links.forEach(link => {
     link.addEventListener('click', (e) => {
@@ -35,13 +35,14 @@ links.forEach(link => {
         link.classList.add('active');
         link.setAttribute('aria-current', 'page');
 
-        loadComponent(link.dataset.section);
-        loadLanguage(localStorage.getItem('lang') || 'es');
+        // Nav clicks
+        loadComponent(link.dataset.section).then(() =>
+            loadLanguage(localStorage.getItem('lang') || 'es')
+        );
     });
 });
 
 // Load default view
-loadComponent('1.Bio').then(
-    // Load stored language
+loadComponent('1.Bio').then(() =>
     loadLanguage(localStorage.getItem('lang') || 'es')
 );

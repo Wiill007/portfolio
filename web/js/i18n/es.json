@@ -17,6 +17,25 @@
     "bio.header3" : "¿A dónde voy?",
     "bio.description3" : "Quiero utilizar todas estas habilidades que he adquirido, y me han sido concedidas por muchas otras personas que impactaron sobre mi forma de ver la vida sean utilizadas, para ayudar a otras personas. Asimismo, quiero seguir desarrollando estos talentos y este potencial hasta donde el tiempo me lo permita.",
 
+    "timeline.title" : "Línea temporal",
+    "timeline.university1.timespan" : "2017",
+    "timeline.university1.title" : "Inicio del Grado de Telecomunicaciones en la UPNA",
+    "timeline.university1.desc" : "En el grado de Telecomunicaciones aprendimos cómo funcionan las tecnologías de comunicaciones actuales desde el mundo analógico mediante antenas o fibras ópticas hasta las comunicaciones digitales como son los protocolos de red HTTP/S, RTSP o IPsec. Asimismo, fue mi primer contacto con la programación y los diferentes lenguajes que usé a lo largo de la carrera - Java, Python y C++",
+    "timeline.university2.timespan" : "2022 (Enero - Junio)",
+    "timeline.university2.title" : "Fin de grado en la Universidad de Coimbra.",
+    "timeline.university2.desc" : "Acabé el grado de Telecomunicaciones en la unviersidad de Coimbra, mediante el programa Erasmus, donde presenté mi TFG sobre el análisis del comportamiento de motores mecánicos mediante las componentes en frecuencia extraídas de las vibraciones del motor.",
+    "timeline.university3.timespan" : "2022 (Septiembre)",
+    "timeline.university3.title" : "Inicio del Máster de Telecomunicaciones en la UPNA",
+    "timeline.university3.desc" : "En este máster fue mi primer contacto con el machine earning y la IA, desde cuando empecé a practicar sobre este campo con más profundidad. Este primer contacto fue mediante el desarrollo de un trabajo de detección y leído automático de matrículas de coche.",
+    "timeline.university4.timespan" : "2024 (Junio)",
+    "timeline.university4.title" : "Fin de Máster",
+    "timeline.university4.desc" : "Acabé mi Máster mediante la realización de un trabajo de visión artificial de detección de manos y patrones de comportamiento de una persona mientras come. En este proceso descubrí cómo utilizar arquitecturas como las CNNs para este tipo de proyectos.",
+    "timeline.university5.timespan" : "2024 - 2026",
+    "timeline.university5.title" : "Trabajo en Tafco Metawireless",
+    "timeline.university5.desc" : "Durante mi trabajo en Tafco Metawireless he tenido la oportunidad de aprender sobre diversas tecnologías punteras de IA, enfocando mi trabajo sobre todo el LLMs (grandes modelos de lenguaje) y desarrollo de aplicaciones software a medida. En Tafco, he desarrollado dos proyectos principalemente - un chat center para Whatsapp y por otro lado, adaptar un LLM para el uso personalizado en la empresa. Como se ve en la imagen, se puede utilizar este tipo de IAs para acceder a datos a tiempo real dinámicamente y generar gráficos a conveniencia.",
+    "timeline.university6.timespan" : "2026 - Actualidad",
+    "timeline.university6.title" : "Mientras sigo trabajando en Tafco...",
+    "timeline.university6.desc" : "Sigo empezando nuevos proyectos para seguir desarrollando mis talentos",
 
     "essay.motto" : "Uno de mis lemas importantes al respecto: Si el problema no precisa de IA, no la uses."
 }
