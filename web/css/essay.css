@@ -1,0 +1,22 @@
+.essay {
+    padding: 3rem min(6rem, 8vw);
+    max-width: 720px;
+}
+
+.essay__header {
+    display: grid;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.essay__body {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.essay__body p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--clr-muted);
+    max-width: none;
+}
