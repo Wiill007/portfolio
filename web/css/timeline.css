@@ -51,6 +51,11 @@
     border: 2px solid var(--clr-bg);
 }
 
+.timeline__item:hover::after {
+    transform: scale(1.4);
+    transition: transform 0.2s ease;
+}
+
 .timeline__item--left::after {
     right: -6px;
 }
@@ -62,6 +67,14 @@
 .timeline__content {
     display: inline-block;
     max-width: 360px;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline__content:hover {
+    background: var(--clr-surface, rgba(0,0,0,0.04));
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
 }
 
 .timeline__date {
